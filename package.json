@@ -1,0 +1,31 @@
+{
+  "name": "drop-shadow-converter",
+  "version": "1.0.0",
+  "description": "Convert Photoshop Drop Shadows to CSS3 Box & Text Shadows - See more at: http://www.melanieceraso.com/psd-to-css3/",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finanzcheck/drop-shadow-converter.git"
+  },
+  "scripts": {
+    "test": "npm run test:less && npm run test:scss",
+    "start": "",
+    "test:less": "lessc test/test.less",
+    "test:scss": "node-sass --output-style expanded test/test.scss"
+  },
+  "keywords": [
+    "phtoshop",
+    "drop",
+    "shadow",
+    "css3-shadow",
+    "less",
+    "mixin",
+    "scss"
+  ],
+  "author": "Stefan Schult <stefan.schult@finanzcheck.de>",
+  "license": "MIT",
+  "devDependencies": {
+    "less": "^2.5.3",
+    "node-sass": "^3.3.3"
+  }
+}

@@ -1,0 +1,41 @@
+// math functions are not included in sass
+@import "../scss/mathfunctions";
+// import converter
+@import "../scss/drop-shadow-converter";
+
+/* just color */
+div {
+  box-shadow: dropShadowConverter(#123);
+  text-shadow: dropShadowConverter(#123, $isTextShadow: true);
+}
+
+/* opacity */
+div {
+  box-shadow: dropShadowConverter(#000, $opacity: 25%);
+  text-shadow: dropShadowConverter(#000, $opacity: 25%, $isTextShadow: true);
+}
+
+/* distance */
+div {
+  box-shadow: dropShadowConverter(#000, $distance: 10px);
+  text-shadow: dropShadowConverter(#000, $distance: 10px, $isTextShadow: true);
+}
+
+/* distance and angle */
+div {
+  box-shadow: dropShadowConverter(#000, $angle: 45, $distance: 10px);
+  text-shadow: dropShadowConverter(#000, $angle: 45, $distance: 10px, $isTextShadow: true);
+}
+
+/* spread and size */
+div {
+  box-shadow: dropShadowConverter(#000, $spread: 15, $size: 15px);
+  text-shadow: dropShadowConverter(#000, $spread: 15, $size: 15px, $isTextShadow: true);
+}
+
+/* all together */
+div {
+  box-shadow: dropShadowConverter(#123, $angle: 45, $distance: 10px, $spread: 15, $size: 15px, $opacity: 25%);
+  text-shadow: dropShadowConverter(#123, $angle: 45, $distance: 10px, $spread: 15, $size: 15px, $opacity: 25%, $isTextShadow: true);
+}
+

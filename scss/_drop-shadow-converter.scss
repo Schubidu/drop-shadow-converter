@@ -1,0 +1,25 @@
+// based on the work of http://www.melanieceraso.com/psd-to-css3/
+@function dropShadowConverter($color: #000, $opacity: 0, $angle: 0, $distance: 0, $spread: 0, $size:0, $isTextShadow: false) {
+
+  // calculate angle ∠
+  $__ang: (180-$angle) * 3.14 / 180; //convert to radians
+
+  // vertical shadow: offset-y = Sin(∠) * Hypotenuse
+  $__offsety: round(sin($__ang) * $distance);
+
+  // horizontal shadow: offset-x = Cos(∠) * Hypotenuse
+  $__offsetx: round(cos($__ang) * $distance);
+
+  //spread-radius equals the Photoshop Size multiplied by the Photoshop Spread percentage
+  $__spreadrad: $size * $spread/100;
+
+  //blur-radius is equal to the Photoshop Size minus the <spread-radius>
+  $__blurrad: $size - $__spreadrad;
+
+  //variable for scope context
+  @if ($isTextShadow) {
+    @return $__offsetx $__offsety $__blurrad $__spreadrad rgba(red($color), green($color), blue($color), $opacity/100);
+  } @else {
+    @return $__offsetx $__offsety $__blurrad rgba(red($color), green($color), blue($color), $opacity/100);
+  }
+}

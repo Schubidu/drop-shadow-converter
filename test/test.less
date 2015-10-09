@@ -1,0 +1,43 @@
+@import "../less/drop-shadow-converter";
+
+/* just color */
+div {
+  .dropShadowConverter(#123);
+  box-shadow: @boxShadow;
+  text-shadow: @textShadow;
+}
+
+/* opacity */
+div {
+  .dropShadowConverter(#000, @opacity: 25%);
+  box-shadow: @boxShadow;
+  text-shadow: @textShadow;
+}
+
+/* distance */
+div {
+  .dropShadowConverter(#000, @distance: 10px);
+  box-shadow: @boxShadow;
+  text-shadow: @textShadow;
+}
+
+/* distance and angle */
+div {
+  .dropShadowConverter(#000, @angle: 45, @distance: 10px);
+  box-shadow: @boxShadow;
+  text-shadow: @textShadow;
+}
+
+/* spread and size */
+div {
+  .dropShadowConverter(#000, @spread: 15, @size: 15px);
+  box-shadow: @boxShadow;
+  text-shadow: @textShadow;
+}
+
+/* all together */
+div {
+  .dropShadowConverter(#123, @angle: 45, @distance: 10px, @spread: 15, @size: 15px, @opacity: 25%);
+  box-shadow: @boxShadow;
+  text-shadow: @textShadow;
+}
