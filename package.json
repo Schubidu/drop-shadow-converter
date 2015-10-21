@@ -1,6 +1,6 @@
 {
   "name": "drop-shadow-converter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert Photoshop Drop Shadows to CSS3 Box & Text Shadows - See more at: http://www.melanieceraso.com/psd-to-css3/",
   "main": "index.js",
   "repository": {
