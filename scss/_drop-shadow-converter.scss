@@ -1,5 +1,5 @@
 // based on the work of http://www.melanieceraso.com/psd-to-css3/
-@function dropShadowConverter($color: #000, $opacity: 0, $angle: 0, $distance: 0, $spread: 0, $size:0, $isTextShadow: false) {
+@function dropShadowConverter($color: #000, $opacity: 100, $angle: 0, $distance: 0, $spread: 0, $size:0, $isTextShadow: false) {
 
   // calculate angle ∠
   $__ang: (180-$angle) * 3.14 / 180; //convert to radians
