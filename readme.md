@@ -60,37 +60,37 @@ div {
 
 /* just color */
 div {
-  box-shadow: dropShadowConverter(#123);
-  text-shadow: dropShadowConverter(#123, $isTextShadow: true);
+  box-shadow: drop-shadow-converter(#123);
+  text-shadow: drop-shadow-converter(#123, $is-text-shadow: true);
 }
 
 /* opacity */
 div {
-  box-shadow: dropShadowConverter(#000, $opacity: 25%);
-  text-shadow: dropShadowConverter(#000, $opacity: 25%, $isTextShadow: true);
+  box-shadow: drop-shadow-converter(#000, $opacity: 25%);
+  text-shadow: drop-shadow-converter(#000, $opacity: 25%, $is-text-shadow: true);
 }
 
 /* distance */
 div {
-  box-shadow: dropShadowConverter(#000, $distance: 10px);
-  text-shadow: dropShadowConverter(#000, $distance: 10px, $isTextShadow: true);
+  box-shadow: drop-shadow-converter(#000, $distance: 10px);
+  text-shadow: drop-shadow-converter(#000, $distance: 10px, $is-text-shadow: true);
 }
 
 /* distance and angle */
 div {
-  box-shadow: dropShadowConverter(#000, $angle: 45, $distance: 10px);
-  text-shadow: dropShadowConverter(#000, $angle: 45, $distance: 10px, $isTextShadow: true);
+  box-shadow: drop-shadow-converter(#000, $angle: 45, $distance: 10px);
+  text-shadow: drop-shadow-converter(#000, $angle: 45, $distance: 10px, $is-text-shadow: true);
 }
 
 /* spread and size */
 div {
-  box-shadow: dropShadowConverter(#000, $spread: 15, $size: 15px);
-  text-shadow: dropShadowConverter(#000, $spread: 15, $size: 15px, $isTextShadow: true);
+  box-shadow: drop-shadow-converter(#000, $spread: 15, $size: 15px);
+  text-shadow: drop-shadow-converter(#000, $spread: 15, $size: 15px, $is-text-shadow: true);
 }
 
 /* all together */
 div {
-  box-shadow: dropShadowConverter(#123, $angle: 45, $distance: 10px, $spread: 15, $size: 15px, $opacity: 25%);
-  text-shadow: dropShadowConverter(#123, $angle: 45, $distance: 10px, $spread: 15, $size: 15px, $opacity: 25%, $isTextShadow: true);
+  box-shadow: drop-shadow-converter(#123, $angle: 45, $distance: 10px, $spread: 15, $size: 15px, $opacity: 25%);
+  text-shadow: drop-shadow-converter(#123, $angle: 45, $distance: 10px, $spread: 15, $size: 15px, $opacity: 25%, $is-text-shadow: true);
 }
 ```
